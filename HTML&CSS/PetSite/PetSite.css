@@ -1,0 +1,38 @@
+body{
+	padding:70px;
+	background: url(https://images.unsplash.com/photo-1494256997604-768d1f608cac?auto=format&fit=crop&w=1101&q=80);
+	background-size: cover;
+	background-position: center;
+}
+html{
+	height:100%;
+}
+#content{
+	text-align: center;
+	padding-top: 25%;
+}
+
+#fontBold{
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 700;
+}
+h3,button{
+	color:white;
+	font-family: 'Source Code Pro', monospace;
+}
+h1{
+	color:white;
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 700;
+	font-size: 5em;
+}
+hr{
+	width: 42%;
+	border-top:1px solid #f8f8f8;
+	border-bottom: rgba(0,0,0,0.2);
+}
+h1,h3{
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
+				 0px 8px 13px rgba(0,0,0,0.2),
+				 0px 16px 23px rgba(0,0,0,0.2);
+}

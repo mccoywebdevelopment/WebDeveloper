@@ -1,0 +1,33 @@
+.outside{
+	border-style: solid;
+	border-width: 20px;
+	border-color: #98a0ad;
+	margin-top:40px;
+	width: 50%;
+	margin-left:25%;
+	padding:20px;
+	max-width: 700px;
+}
+.font{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.date{
+	color: #3395d6;
+	font-size: 30px;
+}
+.heading{
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: -4px;
+}
+.fistParagraph{
+	border-left-style: solid;
+	border-color: #a4b2bc;
+	border-width: 5px;
+	padding: 5px;
+}
+.articleOutline{
+	border-bottom-style: solid;
+	border-color: #98a0ad;
+
+}
