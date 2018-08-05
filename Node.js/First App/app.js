@@ -1,10 +1,20 @@
 var http=require('http');
 var express=require('express');
+var bodyParser=require('body-parser');
 const app=express();
+var posts=[
+    {title:"A dog's life",author:"Dogo"},
+    {title:"A dog's life",author:"Dogo"},
+    {title:"A dog's life",author:"Dogo"}
+
+];
 var enter=0;
 var data=1;
 
-app.use(express.static("public"));
+app.use(bodyParser.urlencoded({extended:true}));
+
+app.use(express.static(__dirname + '/public'));
+
 app.get('/',function (req,res) {
   res.render('home.ejs',{data:data});
   enter++;
@@ -12,16 +22,14 @@ app.get('/',function (req,res) {
 });
 
 app.get('/posts',function (req,res) {
-    var posts=[
-        {title:"A dog's life",author:"Dogo"},
-        {title:"A dog's life",author:"Dogo"},
-        {title:"A dog's life",author:"Dogo"}
-
-    ];
 //sdfjdfsdf
     res.render('posts.ejs',{posts:posts});
 });
-
+app.post('/addItem',function (req,res) {
+    var newItem=req.body.newItem;
+    posts.push(newItem);
+    console.log(posts);
+});
 app.get('/search/:thing',function (req,res) {
     var thing=req.params.thing;
     res.render('search.ejs',{thing:thing});
@@ -33,4 +41,5 @@ app.get('/repeat/:rand',function (req,res) {
 
 app.listen(2000,function() {
     console.log("Listening on Port:"+2000);
-})
+});
+//lksdsdf

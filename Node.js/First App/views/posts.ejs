@@ -2,3 +2,6 @@
 <%for(var i=0;i<posts.length;++i){%>
 <li><%=posts[i].title%></li>
 <%}%>
+<form action="/addItem" method="post">
+    <input type="text" name="newItem" placeholder="book title">
+</form>
