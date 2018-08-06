@@ -27,8 +27,8 @@ app.get('/posts',function (req,res) {
 });
 app.post('/addItem',function (req,res) {
     var newItem=req.body.newItem;
-    posts.push(newItem);
-    console.log(posts);
+    posts.push({title: newItem, author: "N/A"});
+    res.redirect("/posts");
 });
 app.get('/search/:thing',function (req,res) {
     var thing=req.params.thing;
