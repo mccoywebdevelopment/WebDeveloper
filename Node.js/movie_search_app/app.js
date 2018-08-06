@@ -5,19 +5,19 @@ const app=express();
 app.use(express.static(__dirname + '/public'));
 
 var defaultTitle="Alien";
+var userSearch=defaultTitle;
 
 
 
 app.post("/searchMovie",function (req,res) {
-    console.log("search!!!");
-    /*request("http://www.omdbapi.com/?s=star&apikey=thewdb",function (error,res,body) {
+    console.log("http://www.omdbapi.com/?s="+userSearch+"&apikey=thewdb");
+    request("http://www.omdbapi.com/?s="+userSearch+"&apikey=thewdb",function (error,res,body) {
     if(!error && res.statusCode==200){
         var data=JSON.parse(body);
-        console.log(data["query"]["results"]["channel"]["location"]);
-
+        console.log(data);
     }
-    res.render('home.ejs',{});
-});*/
+    //res.render('home.ejs',{});
+    });
 });
 
 
