@@ -16,7 +16,6 @@ var data=[];
 
 app.post("/searchMovie",function (req,res) {
     userSearch=req.body.userTitle;
-    console.log(userSearch);
     console.log("http://www.omdbapi.com/?s="+userSearch+"&apikey=thewdb");
     res.redirect("/");
 
@@ -39,4 +38,4 @@ app.get('/',function (req,response) {
     });
 });
 
-//l
+//ldsd
