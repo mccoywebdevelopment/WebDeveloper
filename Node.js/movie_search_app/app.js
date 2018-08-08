@@ -12,9 +12,10 @@ app.listen(2000,function() {
 
 var userSearch="Alien";
 var data=[];
-
+var posted=false;
 
 app.post("/searchMovie",function (req,res) {
+    posted=true;
     userSearch=req.body.userTitle;
     console.log("http://www.omdbapi.com/?s="+userSearch+"&apikey=thewdb");
     res.redirect("/");
@@ -25,9 +26,15 @@ app.post("/searchMovie",function (req,res) {
 app.get('/',function (req,response) {
     request("http://www.omdbapi.com/?s="+userSearch+"&apikey=thewdb",function (error,res,body) {
         if(!error && res.statusCode==200){
-            data=JSON.parse(body);
-            console.log(data["Search"][0]);
-            response.render('home.ejs',{data:data});
+            if (typeof data[0] == 'undefined' && posted==true)
+            {
+                response.send("Movie not found.")
+            }
+            else{
+                data=JSON.parse(body);
+                console.log(data["Search"][0]);
+                response.render('home.ejs',{data:data});
+            }
 
         }
         else{
