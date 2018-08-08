@@ -26,7 +26,7 @@ app.get('/',function (req,response) {
     request("http://www.omdbapi.com/?s="+userSearch+"&apikey=thewdb",function (error,res,body) {
         if(!error && res.statusCode==200){
             data=JSON.parse(body);
-            console.log(data["Search"][0].Title);
+            console.log(data["Search"][0]);
             response.render('home.ejs',{data:data});
 
         }
@@ -38,4 +38,4 @@ app.get('/',function (req,response) {
     });
 });
 
-//ldsd
+//ldsdsssss
