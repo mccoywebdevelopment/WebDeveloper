@@ -8,10 +8,21 @@
         <input type="text" required name="userTitle" placeholder="Title of Movie">
         <button class="btn btn-primary">Search</button>
     </form>
-    <p><%=data[0]%></p>
     <%for(var i=0;i<data["Search"].length;++i){%>
-    <li><%=data["Search"][i].Title%></li>
-    <img src="<%=data["Search"][i].Poster%>">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="float-right">
+                <h2><%=data["Search"][i].Title%></h2>
+                <img src="<%=data["Search"][i].Poster%>">
+            </div>
+            <%i=i+1;%>
+        </div>
+        <div class="col-lg-6">
+            <h2><%=data["Search"][i].Title%></h2>
+            <img src="<%=data["Search"][i].Poster%>">
+        </div>
+        </div>
+    </div>
     <%}%>
 </body>
 </html>
