@@ -11,11 +11,11 @@ var campSites=[
 
 
 app.get("/",function (req,res) {
-    res.send("Home page");
+    res.render("landing.ejs");
 });
 
-app.get("/landing",function (req,res) {
-    res.render("landing.ejs",{campSites:campSites});
+app.get("/campSite",function (req,res) {
+    res.render("campSite.ejs",{campSites:campSites});
 });
 
 app.listen(2000,function() {
