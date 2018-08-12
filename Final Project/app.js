@@ -18,6 +18,10 @@ app.get("/campSite",function (req,res) {
     res.render("campSite.ejs",{campSites:campSites});
 });
 
+app.post("/campSite",function (req,res) {
+    var newCampSite=req.body.newCamp;
+    console.log(newCampSite);
+});
 app.listen(2000,function() {
     console.log("Listening on Port:"+2000);
 });
