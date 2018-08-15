@@ -1,5 +1,7 @@
+<%include partials/header%>
 <a href="/new">Add new Campground</a>
 <%for(var i=0;i<campSites.length;++i){%>
 <h1><%=campSites[i].title%></h1>
 <img src="<%=campSites[i].image%>">
 <%}%>
+<%include partials/footer%>
