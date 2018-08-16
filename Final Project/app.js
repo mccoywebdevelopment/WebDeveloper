@@ -8,6 +8,9 @@ var campSites=[
     {title:"Camp Pike",image:"https://images.pexels.com/photos/6714/light-forest-trees-morning.jpg?auto=compress&cs=tinysrgb&h=350"},
     {title:"Camp Yolo",image:"https://images.pexels.com/photos/176381/pexels-photo-176381.jpeg?auto=compress&cs=tinysrgb&h=350"},
     {title:"Camp Steph",image:"https://images.pexels.com/photos/14287/pexels-photo-14287.jpeg?auto=compress&cs=tinysrgb&h=350"},
+    {title:"Camp Pike",image:"https://images.pexels.com/photos/6714/light-forest-trees-morning.jpg?auto=compress&cs=tinysrgb&h=350"},
+    {title:"Camp Yolo",image:"https://images.pexels.com/photos/176381/pexels-photo-176381.jpeg?auto=compress&cs=tinysrgb&h=350"},
+    {title:"Camp Steph",image:"https://images.pexels.com/photos/14287/pexels-photo-14287.jpeg?auto=compress&cs=tinysrgb&h=350"},
     {title:"Camp Doe",image:"https://images.pexels.com/photos/111362/pexels-photo-111362.jpeg?auto=compress&cs=tinysrgb&h=350"}];
 //===============================================
 
