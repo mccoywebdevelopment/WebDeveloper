@@ -1,7 +1,57 @@
 <%include partials/header%>
-<a href="/new">Add new Campground</a>
+<header>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Welcome to YelpCamp!</h1>
+                <p>Where we find all your camping needs.</p>
+                <a class="btn btn-primary" href="/new">Add new Campground</a>
+            </div>
+        </div>
+    </div>
+
+<div class="container">
 <%for(var i=0;i<campSites.length;++i){%>
-<h1><%=campSites[i].title%></h1>
-<img src="<%=campSites[i].image%>">
+    <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="img-thumbnail">
+                <img src="<%=campSites[i].image%>">
+                <div class="img-caption">
+                    <h1><%=campSites[i].title%></h1>
+                </div>
+            </div>
+        </div>
+        <%i++;%>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="img-thumbnail">
+                <img src="<%=campSites[i].image%>">
+                <div class="img-caption">
+                    <h1><%=campSites[i].title%></h1>
+                </div>
+            </div>
+        </div>
+        <%i++;%>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="img-thumbnail">
+                <img src="<%=campSites[i].image%>">
+                <div class="img-caption">
+                    <h1><%=campSites[i].title%></h1>
+                </div>
+            </div>
+        </div>
+        <%i++;%>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="img-thumbnail">
+                <img src="<%=campSites[i].image%>">
+                <div class="img-caption">
+                    <h1><%=campSites[i].title%></h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
 <%}%>
+</div>
+</header>
 <%include partials/footer%>

@@ -5,10 +5,10 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 //Variables======================================
 var campSites=[
-    {title:"Camp Pike",image:"https://cdn1.freshoffthegrid.com/wp-content/uploads/guide-to-free-campsites-in-the-us-and-canada.jpg"},
-    {title:"Camp Yolo",image:"https://www.weekendnotes.com/im/006/03/best-free-camping-in-south-australiabest-free-camp.jpg"},
-    {title:"Camp Steph",image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXAjkhsZYvkyu0PWBAdSxQm_8SFeieS6WljGqtHqlW-_UlKTLg9A"},
-    {title:"Camp Doe",image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQww-oC_fV0vNa-cHvmImgHAtBiPYuXxU5ozmGQJM9q1TUQlZBnCA"}];
+    {title:"Camp Pike",image:"https://images.pexels.com/photos/6714/light-forest-trees-morning.jpg?auto=compress&cs=tinysrgb&h=350"},
+    {title:"Camp Yolo",image:"https://images.pexels.com/photos/176381/pexels-photo-176381.jpeg?auto=compress&cs=tinysrgb&h=350"},
+    {title:"Camp Steph",image:"https://images.pexels.com/photos/14287/pexels-photo-14287.jpeg?auto=compress&cs=tinysrgb&h=350"},
+    {title:"Camp Doe",image:"https://images.pexels.com/photos/111362/pexels-photo-111362.jpeg?auto=compress&cs=tinysrgb&h=350"}];
 //===============================================
 
 
