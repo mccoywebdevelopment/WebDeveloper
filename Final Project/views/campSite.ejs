@@ -19,7 +19,7 @@
 
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="thumbnail">
-                <img src="<%=campSites[i].image%>" style="width:100%!important;">
+                <img  onerror="this.source=<%=defaultImg%>" src="<%=campSites[i].image%>" style="width:100%!important;">
                 <div class="caption">
                     <h1><%=campSites[i].title%></h1>
                 </div>

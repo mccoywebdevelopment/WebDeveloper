@@ -1,9 +1,14 @@
 <%include partials/header%>
-<form method="post" action="/campSite">
-    <p>Add CampGround</p>
-    <input type="text" name="newCampSite" required placeholder="Name of CampGround">
-    <p>image url</p>
-    <input type="text" name="newCampSiteURL" required placeholder="URL of CampGround">
-    <button>Add</button>
-</form>
+<div class="container">
+    <div class="jumbotron">
+        <form method="post" action="/campSite" style="text-align: left;">
+
+            <h1>Add CampGround</h1>
+            <input style="width: 400px;" type="text" name="newCampSite" required placeholder="Name of CampGround">
+            <h2>image url</h2>
+            <input style="width: 400px;" type="text" name="newCampSiteURL" required placeholder="URL of CampGround">
+            <button class="btn btn-primary">Add</button>
+        </form>
+    </div>
+</div>
 <%include partials/footer%>
